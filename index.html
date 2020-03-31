@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+		<h3>Current Bracket: <input id="bracketname"/></h3>
+		<table>
+			<tr>
+				<td>
+					<input id="A_a_1" tabindex="1" onchange="persist()"/>
+					<button onclick="select_from_input('A_a_1', 'A_a')">
+						&#8250;
+					</button>
+				</td>
+				<td rowspan="2">
+					<span id="A_a">?</span>
+					<button onclick="select('A_a', 'A')">
+						&#8250;
+					</button>
+				</td>
+				<td rowspan="5">
+					<span id="A">?</span>
+					<button onclick="select('A', 'AB')">
+						&#8250;
+					</button>
+				</td>
+				<td rowspan="11">
+					<span id="AB">?</span>
+					<button onclick="select('AB', 'Final')">
+						&#8250;
+					</button>
+				</td>
+				<td rowspan="11"><span id="Final">?</span></td>
+				<td rowspan="11">
+					<button onclick="select('CD', 'Final')">
+						&#8249;
+					</button>
+					<span id="CD">?</span>
+				</td>
+				<td rowspan="5">
+					<button onclick="select('C', 'CD')">
+						&#8249;
+					</button>
+					<span id="C">?</span>
+				</td>
+				<td rowspan="2">
+					<button onclick="select('C_a', 'C')">
+						&#8249;
+					</button>
+					<span id="C_a">?</span>
+				</td>
+				<td>
+					<button onclick="select_from_input('C_a_1', 'C_a')">
+						&#8249;
+					</button>
+					<input id="C_a_1" tabindex="9" onchange="persist()"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input id="A_a_2" tabindex="2" onchange="persist()"/>
+					<button onclick="select_from_input('A_a_2', 'A_a')">
+						&#8250;
+					</button>
+				</td>
+				<td>
+					<button onclick="select_from_input('C_a_2', 'C_a')">
+						&#8249;
+					</button>
+					<input id="C_a_2" tabindex="10" onchange="persist()"/>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>
+					<input id="A_b_1" tabindex="3" onchange="persist()"/>
+					<button onclick="select_from_input('A_b_1', 'A_b')">
+						&#8250;
+					</button>
+				</td>
+				<td rowspan="2">
+					<span id="A_b">?</span>
+					<button onclick="select('A_b', 'A')">
+						&#8250;
+					</button>
+				</td>
+				<td rowspan="2">
+					<button onclick="select('C_b', 'C')">
+						&#8249;
+					</button>
+					<span id="C_b">?</span>
+				</td>
+				<td>
+					<button onclick="select_from_input('C_b_1', 'C_b')">
+						&#8249;
+					</button>
+					<input id="C_b_1" tabindex="11" onchange="persist()"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input id="A_b_2" tabindex="4" onchange="persist()"/>
+					<button onclick="select_from_input('A_b_2', 'A_b')">
+						&#8250;
+					</button>
+				</td>
+				<td>
+					<button onclick="select_from_input('C_b_2', 'C_b')">
+						&#8249;
+					</button>
+					<input id="C_b_2" tabindex="12" onchange="persist()"/>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>
+					<input id="B_a_1" tabindex="5" onchange="persist()"/>
+					<button onclick="select_from_input('B_a_1', 'B_a')">
+						&#8250;
+					</button>
+				</td>
+				<td rowspan="2">
+					<span id="B_a">?</span>
+					<button onclick="select('B_a', 'B')">
+						&#8250;
+					</button>
+				</td>
+				<td rowspan="5">
+					<span id="B">?</span>
+					<button onclick="select('B', 'AB')">
+						&#8250;
+					</button>
+				</td>
+				<td rowspan="5">
+					<button onclick="select('D', 'CD')">
+						&#8249;
+					</button>
+					<span id="D">?</span>
+				</td>
+				<td rowspan="2">
+					<button onclick="select('D_a', 'D')">
+						&#8249;
+					</button>
+					<span id="D_a">?</span>
+				</td>
+				<td>
+					<button onclick="select_from_input('D_a_1', 'D_a')">
+						&#8249;
+					</button>
+					<input id="D_a_1" tabindex="13" onchange="persist()"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input id="B_a_2" tabindex="6" onchange="persist()"/>
+					<button onclick="select_from_input('B_a_2', 'B_a')">
+						&#8250;
+					</button>
+				</td>
+				<td>
+					<button onclick="select_from_input('D_a_2', 'D_a')">
+						&#8249;
+					</button>
+					<input id="D_a_2"  tabindex="14" onchange="persist()"/>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>
+					<input id="B_b_1" tabindex="7" onchange="persist()"/>
+					<button onclick="select_from_input('B_b_1', 'B_b')">
+						&#8250;
+					</button>
+				</td>
+				<td rowspan="2">
+					<span id="B_b">?</span>
+					<button onclick="select('B_b', 'B')">
+						&#8250;
+					</button>
+				</td>
+				<td rowspan="2">
+					<button onclick="select('D_b', 'D')">
+						&#8249;
+					</button>
+					<span id="D_b">?</span>
+				</td>
+				<td>
+					<button onclick="select_from_input('D_b_1', 'D_b')">
+						&#8249;
+					</button>
+					<input id="D_b_1"  tabindex="15" onchange="persist()"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input id="B_b_2" tabindex="8" onchange="persist()"/>
+					<button onclick="select_from_input('B_b_2', 'B_b')">
+						&#8250;
+					</button>
+				</td>
+				<td>
+					<button onclick="select_from_input('D_b_2', 'D_b')">
+						&#8249;
+					</button>
+					<input id="D_b_2" tabindex="16" onchange="persist()"/>
+				</td>
+			</tr>
+		</table>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+table {
+	border: 5px solid black;
+	border-collapse: collapse;
+}
+
+input {
+	width: 130px;
+}
+
+td {
+	border: 1px solid black;
+	text-align: center;
+	vertical-align: middle;
+	height: 30px;
+	width: 160px;
+}
+
+button {
+  background-color: DodgerBlue; /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 0 6px; /* Some padding */
+  font-size: 20px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+button:hover {
+  background-color: RoyalBlue;
+}
